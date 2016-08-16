@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+	<title>Chain It - Make your habits too strong to break</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+	<script src ="script/app.js"></script>
+</head>
+<body ng-controller="newChainController">
+	<h1>Chains</h1>
+	<ul>
+		<li ng-repeat="habit in habits">
+		<h2>{{habit.name}}</h2>
+		<h3>{{habit.desc}}</h3>
+	<h3>Total Habits: {{habits.length}}</h3>
+		
+</body>
+</html>

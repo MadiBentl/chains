@@ -5,10 +5,18 @@
 	text-align: center;
 	padding: 20px;
 }
+.chain-display{
+	width: 20%;
+	background-color: #eddbf9;
+	margin: 20px;
+	display:inline-block;
+}
 .weekDays-selector input {
   display: none!important;
 }
-
+h1{
+	text-align: center;
+}
 .weekDays-selector input[type=checkbox] + label {
   display: inline-block;
   border-radius: 6px;

@@ -1,0 +1,71 @@
+//colours for chains
+$colour1: #247389;
+$colour2: #9CF989;
+$colour3: #DF2935;
+$colour4: #FFEC5E;
+$colour5: #87F5FB;
+
+$colours: $colour1, $colour2, $colour3, $colour4, $colour5;
+
+.c1{
+	background-color: $colour1;
+}
+.c2{
+	background-color: $colour2;
+}
+.c3{
+	background-color: $colour3;
+}
+.c4{
+	background-color: $colour4;
+}
+.c5{
+	background-color: $colour5;
+}
+
+.container{
+	border:#0c5f21 3px solid;
+	background-color:#e3faff;
+	width: 50%;
+	text-align: center;
+	padding: 20px;
+}
+h1{
+	text-align: center;
+}
+textarea{
+	width:300px;
+	height:90px;
+}
+ul{
+	text-decoration: none;
+}
+.chain-display{
+	width: 25%;
+	background-color: #eddbf9;
+	margin: 15px;
+	padding:15px;
+	color:white;
+	display:inline-block;
+	border-radius: 10px;
+}
+.weekDays-selector{
+	input {
+		display: none!important;
+	}
+	input[type=checkbox] + label {
+	  display: inline-block;
+	  border-radius: 6px;
+	  background: #dddddd;
+	  height: 40px;
+	  width: 30px;
+	  margin-right: 3px;
+	  line-height: 40px;
+	  text-align: center;
+	  cursor: pointer;
+	}
+	input[type=checkbox]:checked + label {
+	  background: #2AD705;
+	  color: #ffffff;
+	}
+}

@@ -1,6 +1,7 @@
 <div class = "chain-display" ng-repeat="habit in habits">
 	<h2>{{habit.name}}</h2>
 	<h3>{{habit.desc}}</h3>
+	<h3>Started on: {{habit.date | date:'dd/MM/yyyy'}}</h3>
 	<h3>Total Habits: {{habits.length}}</h3>
 </div>
 

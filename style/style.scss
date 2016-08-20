@@ -1,12 +1,28 @@
 //colours for chains
 $colour1: #247389;
-$colour2: #9CF989;
+$colour2: #499E38;
 $colour3: #DF2935;
 $colour4: #FFEC5E;
 $colour5: #87F5FB;
+$white: white;
 
 $colours: $colour1, $colour2, $colour3, $colour4, $colour5;
-
+*{
+	font-family: "Helvetica", sans-serif;
+}
+body{
+	background-color: $white;
+	border: 20px solid black;
+	margin:0px;
+}
+h1{
+	font-size: 10em;
+	line-height: 0.7em;
+}
+h2{
+	font-size: 5em;
+	line-height: 0.7em;
+}
 .c1{
 	background-color: $colour1;
 }
@@ -24,11 +40,11 @@ $colours: $colour1, $colour2, $colour3, $colour4, $colour5;
 }
 
 .container{
-	border:#0c5f21 3px solid;
-	background-color:#e3faff;
-	width: 50%;
-	text-align: center;
+	background-color:$colour4;
+	border: 20px solid lighten($colour4, 20%);
+	width: 60%;
 	padding: 20px;
+	margin:auto;
 }
 h1{
 	text-align: center;
@@ -65,7 +81,7 @@ ul{
 	  cursor: pointer;
 	}
 	input[type=checkbox]:checked + label {
-	  background: #2AD705;
+	  background: $colour2;
 	  color: #ffffff;
 	}
 }

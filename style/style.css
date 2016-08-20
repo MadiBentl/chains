@@ -1,22 +1,62 @@
-.container{
-	border:#0c5f21 3px solid;
-	background-color:#e3faff;
-	width: 50%;
-	text-align: center;
-	padding: 20px;
-}
-.chain-display{
-	width: 20%;
-	background-color: #eddbf9;
-	margin: 20px;
-	display:inline-block;
-}
+* {
+  font-family: "Helvetica", sans-serif; }
+
+body {
+  background-color: white;
+  border: 20px solid black;
+  margin: 0px; }
+
+h1 {
+  font-size: 10em;
+  line-height: 0.7em; }
+
+h2, h3, h4, p {
+  font-size: 3em;
+  line-height: 0.7em; }
+
+.c1 {
+  background-color: #247389; }
+
+.c2 {
+  background-color: #499E38; }
+
+.c3 {
+  background-color: #DF2935; }
+
+.c4 {
+  background-color: #FFEC5E; }
+
+.c5 {
+  background-color: #87F5FB; }
+
+.container {
+  background-color: #FFEC5E;
+  border: 20px solid #fff8c4;
+  width: 60%;
+  padding: 20px;
+  margin: auto; }
+
+h1 {
+  text-align: center; }
+
+textarea {
+  width: 300px;
+  height: 90px; }
+
+ul {
+  text-decoration: none; }
+
+.chain-display {
+  width: 25%;
+  background-color: #eddbf9;
+  margin: 15px;
+  padding: 15px;
+  color: white;
+  display: inline-block;
+  border-radius: 10px; }
+
 .weekDays-selector input {
-  display: none!important;
-}
-h1{
-	text-align: center;
-}
+  display: none !important; }
 .weekDays-selector input[type=checkbox] + label {
   display: inline-block;
   border-radius: 6px;
@@ -26,17 +66,9 @@ h1{
   margin-right: 3px;
   line-height: 40px;
   text-align: center;
-  cursor: pointer;
-}
-
+  cursor: pointer; }
 .weekDays-selector input[type=checkbox]:checked + label {
-  background: #2AD705;
-  color: #ffffff;
-}
-textarea{
-	width:300px;
-	height:90px;
-}
-ul{
-	text-decoration: none;
-}
+  background: #499E38;
+  color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

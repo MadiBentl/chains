@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", []);
+var myApp = angular.module("myApp", ["ngRoute"]);
 
 myApp.controller("newChainController", ["$scope", function ($scope){
 	$scope.habits = [
@@ -29,9 +29,22 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 	};
 }]);
 
-myApp.directive('viewAll', function() {
+myApp.config(function($routeProvider) {
+  $routeProvider
+  .when("/", {
+    templateUrl : "index.htm"
+  })
+  .when("/view-all", {
+    templateUrl : "views/view-all.html"
+  })
+  .when("/add", {
+	templateUrl: "views/add.html"
+  });
+});
+
+/*myApp.directive('viewAll', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/view-all.html'
   };
-});
+});*/

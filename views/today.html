@@ -3,6 +3,13 @@
 		<h3>Today is</h3><h2>{{today | date:"MMMM d, y"}}</h2>
 	</div>
 	<div class="container" ng-repeat="habit in habits">
-		<h4>{{habit.name}}</h4>
+		<form ng-submit="addDiary()" name="todayForm">
+			<h4>{{habit.name}}</h4>
+			<label>Did habit?:
+				<input type="checkbox" ng-model="checkboxModel.didHabit">
+			</label>
+			<h5>Notes</h5><textarea>{{notes}}</textarea>
+			<input type="submit" id="submit" value="Submit" />
+		</form>
 	</div>
 </div>

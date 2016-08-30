@@ -92,6 +92,16 @@ ul {
   .chain-display h3, .chain-display h4, .chain-display h5 {
     font-size: 1em; }
 
+.todayDate {
+  text-align: center; }
+  .todayDate h2, .todayDate h3 {
+    display: inline; }
+  .todayDate h3 {
+    margin-right: 20px; }
+  .todayDate h2 {
+    padding-bottom: 10px;
+    border-bottom: 5px solid black; }
+
 .weekDays-selector input {
   display: none !important; }
 .weekDays-selector input[type=checkbox] + label {

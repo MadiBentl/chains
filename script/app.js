@@ -32,29 +32,26 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 	$scope.addChain= function(){
 		console.log("submit has been pushed");
 		$scope.date = new Date();
-		$scope.habits.push({name: $scope.name, desc: $scope.desc, date: $scope.date});
-		$scope.name ="";
-		$scope.desc ="";
-		$scope.date ="";
+			$scope.habits.push({name: $scope.name, desc: $scope.desc, date: $scope.date});
+			console.log($scope.habits);
+			$scope.name ="";
+			$scope.desc ="";
+			$scope.date ="";
 	};
 }]);
 
 myApp.config(function($routeProvider) {
   $routeProvider
   .when("/", {
-		controller: "newChainController",
     templateUrl : "index.html"
   })
   .when("/view-all", {
-		controller: "newChainController",
     templateUrl : "views/view-all.html"
   })
 	.when("/today", {
-		controller: "newChainController",
 		templateUrl : "views/today.html"
 	})
   .when("/add", {
-		controller: "newChainController",
 		templateUrl: "views/add.html"
   })
 	.otherwise({redirectTo:"/"});

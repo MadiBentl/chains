@@ -58,14 +58,10 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 		}
 	];
 	$scope.today= new Date();
-	$scope.checkboxModel={
-		didHabit: true
-	}
-	$scope.createCalendar = function(){
-	};
-	$scope.getLongestChain = function(habit){
-
-	};
+	$scope.remove= function(index){
+		console.log(index);
+    	$scope.habits.splice(index, 1);
+    };
 	$scope.getTotalDays = function(habit){
 		var oneDay = 24*60*60*1000;
 		var today= new Date();

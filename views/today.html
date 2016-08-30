@@ -15,7 +15,7 @@
   <div class = "task-display">
     <ul ng-repeat="task in tasks | filter:{done: false}">
     <li>
-      <button ng-click="tasks.$remove(task)">Delete</button>
+      <button ng-click="remove($index)">Delete</button>
       <button ng-click="task.done = true">Done</button>
       {{task.name}}
     </li>

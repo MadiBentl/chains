@@ -8,6 +8,10 @@ myApp.controller("toDoController", ["$scope", function ($scope){
 		{name: "Finish sales report", done: false},
 		{name: "Call mom", done: false},
 	];
+	$scope.remove = function(index) {
+		console.log(index);
+    	$scope.tasks.splice(index, 1);
+    };
 	$scope.newTask={
 		name:""
 	};

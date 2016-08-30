@@ -5,14 +5,19 @@
       <ul ng-repeat="habit in habits">
     	<li><input type="checkbox" ng-model="myApp.value1">Name: {{habit.name}}</li>
     </ul>
-    <a href="#add">/add new</a><a href="#view-all">/all</a>'
+    <a href="#add">/add new</a><a href="#view-all">/all</a>
     </div>
 </div>
 <div class="list" ng-controller="toDoController as toDoC">
   <h2>To Do</h2>
   <div class = "task-display">
-    <ul ng-repeat="task in tasks">
-    <li><input type="checkbox" ng-model="myApp.value1">{{task.name}}</li>
+    <ul ng-repeat="task in tasks | filter:{done: false}">
+    <li>
+      <input type="checkbox" ng-model="myApp.value1">
+      <button ng-click="tasks.$remove(task)">Delete</button>
+      <button ng-click="task.done = true">Done</button>
+      {{task.name}}
+    </li>
   </ul>
   	<form ng-submit="addTask()">
       Add: <input type="text" ng-model="newTask.name" name="name"placeholder="eg. jog 15km">

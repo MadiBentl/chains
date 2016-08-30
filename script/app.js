@@ -2,19 +2,19 @@ var myApp = angular.module("myApp", ['ngRoute']);
 
 myApp.controller("toDoController", ["$scope", function ($scope){
 	$scope.tasks=[
-		{name: "Take dog for a walk"},
-		{name: "Clean the Kitchen"},
-		{name: "Get coffee with Jill at 6PM"},
-		{name: "Finish sales report"},
-		{name: "Call mom"},
+		{name: "Take dog for a walk", done: false},
+		{name: "Clean the Kitchen", done: false},
+		{name: "Get coffee with Jill at 6PM", done: false},
+		{name: "Finish sales report", done: false},
+		{name: "Call mom", done: false},
 	];
 	$scope.newTask={
 		name:""
-	}
+	};
 	$scope.addTask= function(){
 		$scope.tasks.push({name: $scope.newTask.name});
 		$scope.newTask.name ="";
-	}
+	};
 }]);
 
 myApp.controller("newChainController", ["$scope", function ($scope){

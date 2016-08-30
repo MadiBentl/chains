@@ -2,8 +2,10 @@
 <div class="list">
   <h2>Daily Tasks</h2>
     <div class = "task-display">
-      <ul ng-repeat="habit in habits">
-    	<li><input type="checkbox" ng-model="myApp.value1">Name: {{habit.name}}</li>
+      <ul ng-repeat="habit in habits | filter:{done:false}">
+    	<li>
+        <button ng-click="habit.done = true">Done</button>
+        {{habit.name}}</li>
     </ul>
     <a href="#add">/add new</a><a href="#view-all">/all</a>
     </div>
@@ -13,7 +15,6 @@
   <div class = "task-display">
     <ul ng-repeat="task in tasks | filter:{done: false}">
     <li>
-      <input type="checkbox" ng-model="myApp.value1">
       <button ng-click="tasks.$remove(task)">Delete</button>
       <button ng-click="task.done = true">Done</button>
       {{task.name}}

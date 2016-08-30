@@ -29,6 +29,7 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 			desc: "Following my dentist's advice and flossing daily to avoid tartar and cavities.",
 			days: ["Su", "M", "Tu", "W", "Th", "F", "Sa"],
 			date: new Date(2016,05,19),
+			done: false,
 			diary: [{day: new Date(2016, 05, 18), didHab: true, notes: ""},
 							{day: new Date(2016, 05, 19), didHab: false, notes: "Forgot"},
 							{day: new Date(2016, 05, 20), didHab: true, notes: "Flossed Morning and Night"}]
@@ -37,6 +38,7 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 			desc: "Go jogging twice a week for 30 minutes. This is a good way to stay in shape.",
 			days: ["M", "W", "F"],
 			date: new Date(2016,07,9),
+			done: false,
 			diary: [{day: new Date(2016, 07, 18), didHab: true, notes: ""},
 							{day: new Date(2016, 07, 19), didHab: true, notes: "New personal best time"},
 							{day: new Date(2016, 07, 20), didHab: true, notes: "Jogged 10KM"}]
@@ -45,6 +47,7 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 			desc: "Get my day started early by being awake early. Even on weekends!",
 			days: ["M", "Tu", "W", "Th", "F"],
 			date: new Date(2016,02,29),
+			done: false,
 			diary: [{day: new Date(2016, 07, 18), didHab: true, notes: ""},
 							{day: new Date(2016, 07, 19), didHab: false, notes: "feeling sick"},
 							{day: new Date(2016, 07, 20), didHab: true, notes: ""}]

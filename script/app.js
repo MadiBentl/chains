@@ -1,5 +1,5 @@
 var myApp = angular.module("myApp", ['ngRoute']);
-/*
+
 myApp.controller("toDoController", ["$scope", function ($scope){
 	$scope.tasks=[
 		{name: "Take dog for a walk"},
@@ -8,7 +8,7 @@ myApp.controller("toDoController", ["$scope", function ($scope){
 		{name: "Finish sales report"},
 		{name: "Call mom"},
 	];
-}]);*/
+}]);
 
 myApp.controller("newChainController", ["$scope", function ($scope){
 	$scope.habits = [

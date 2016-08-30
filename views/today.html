@@ -3,7 +3,7 @@
   <h2>Daily Tasks</h2>
     <div class = "task-display">
       <ul ng-repeat="habit in habits">
-    	<li><input type="checkbox" ng-model="myApp.value1">{{habit.name}}</li>
+    	<li><input type="checkbox" ng-model="myApp.value1">Name: {{habit.name}}</li>
     </div>
 </div>
 <div class="list" ng-controller="toDoController as toDoC">
@@ -11,4 +11,8 @@
   <div class = "task-display">
     <ul ng-repeat="task in tasks">
     <li><input type="checkbox" ng-model="myApp.value1">{{task.name}}</li>
+  </ul>
+  	<form ng-submit="addTask()">
+      Add: <input type="text" ng-model="newTask.name" name="name"placeholder="eg. jog 15km">
+    </form>
   </div>

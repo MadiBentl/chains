@@ -8,9 +8,21 @@ myApp.controller("toDoController", ["$scope", function ($scope){
 		{name: "Finish sales report"},
 		{name: "Call mom"},
 	];
+	$scope.newTask={
+		name:""
+	}
+	$scope.addTask= function(){
+		$scope.tasks.push({name: $scope.newTask.name});
+		$scope.newTask.name ="";
+	}
 }]);
 
 myApp.controller("newChainController", ["$scope", function ($scope){
+	$scope.newHabit={
+		name:"",
+		desc:"",
+		date:""
+	}
 	$scope.habits = [
 		{
 			name: 'Flossing',
@@ -64,7 +76,9 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 	$scope.addChain= function(){
 		console.log("submit has been pushed");
 		$scope.date = new Date();
-			$scope.habits.push({name: $scope.name, desc: $scope.desc, date: $scope.date});
+			$scope.habits.push({name: $scope.newHabit.name,
+													desc: $scope.newHabit.desc,
+													date: $scope.newHabit.date});
 			console.log($scope.habits);
 			$scope.name ="";
 			$scope.desc ="";

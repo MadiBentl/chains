@@ -81,6 +81,7 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 		$scope.date = new Date();
 			$scope.habits.push({name: $scope.newHabit.name,
 													desc: $scope.newHabit.desc,
+													done: false,
 													date: $scope.newHabit.date});
 			console.log($scope.habits);
 			$scope.name ="";

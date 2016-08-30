@@ -62,6 +62,23 @@ textarea {
 ul {
   text-decoration: none; }
 
+.task-display {
+  display: inline-block;
+  border-radius: 6px; }
+
+.list {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  width: 40%;
+  background-color: #DF2935;
+  display: inline-block;
+  float: left; }
+  .list ul {
+    list-style: none; }
+  .list h4 {
+    display: block; }
+
 .chain-display {
   width: 25%;
   background-color: #eddbf9;

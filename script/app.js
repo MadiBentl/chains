@@ -1,4 +1,14 @@
-var myApp = angular.module("myApp", ["ngRoute"]);
+var myApp = angular.module("myApp", ['ngRoute']);
+/*
+myApp.controller("toDoController", ["$scope", function ($scope){
+	$scope.tasks=[
+		{name: "Take dog for a walk"},
+		{name: "Clean the Kitchen"},
+		{name: "Get coffee with Jill at 6PM"},
+		{name: "Finish sales report"},
+		{name: "Call mom"},
+	];
+}]);*/
 
 myApp.controller("newChainController", ["$scope", function ($scope){
 	$scope.habits = [
@@ -24,7 +34,7 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 		$scope.date = new Date();
 		$scope.habits.push({name: $scope.name, desc: $scope.desc, date: $scope.date});
 		$scope.name ="";
-		$scope.desc ="";	
+		$scope.desc ="";
 		$scope.date ="";
 	};
 }]);
@@ -32,14 +42,22 @@ myApp.controller("newChainController", ["$scope", function ($scope){
 myApp.config(function($routeProvider) {
   $routeProvider
   .when("/", {
-    templateUrl : "index.htm"
+		controller: "newChainController",
+    templateUrl : "index.html"
   })
   .when("/view-all", {
+		controller: "newChainController",
     templateUrl : "views/view-all.html"
   })
+	.when("/today", {
+		controller: "newChainController",
+		templateUrl : "views/today.html"
+	})
   .when("/add", {
-	templateUrl: "views/add.html"
-  });
+		controller: "newChainController",
+		templateUrl: "views/add.html"
+  })
+	.otherwise({redirectTo:"/"});
 });
 
 /*myApp.directive('viewAll', function() {

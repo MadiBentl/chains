@@ -8,6 +8,10 @@ $white: white;
 
 $radius: 6px;
 
+@mixin bordmarg(){
+	margin: 15px;
+	padding:15px;
+}
 $colours: $colour1, $colour2, $colour3, $colour4, $colour5;
 *{
 	font-family: "Helvetica", sans-serif;
@@ -76,6 +80,24 @@ textarea{
 }
 ul{
 	text-decoration: none;
+}
+.task-display{
+	display:inline-block;
+	border-radius: $radius;
+}
+.list{
+	@include bordmarg();
+	border-radius: $radius;
+	width: 40%;
+	background-color: $colour3;
+	display: inline-block;
+	float:left;
+	ul{
+		list-style: none;
+	}
+	h4{
+		display:block;
+	}
 }
 .chain-display{
 	width: 25%;

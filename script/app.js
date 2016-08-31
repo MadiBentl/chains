@@ -104,6 +104,9 @@ myApp.config(function($routeProvider) {
   .when("/add", {
 		templateUrl: "views/add.html"
   })
+	.when("/titlepage", {
+		templateUrl: "views/titlepage.html"
+  })
 	.otherwise({redirectTo:"/"});
 });
 

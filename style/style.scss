@@ -13,6 +13,15 @@ $radius: 6px;
 	margin: 15px;
 	padding:15px;
 }
+button{
+	border-radius: $radius;
+	border:2px solid $white;
+	color: $white;
+	background-color: inherit;
+	padding: 10px;
+	font-size: 1.2em;
+	font-family: "Helvetica", sans-serif;
+}
 $colours: $colour1, $colour2, $colour3, $colour4, $colour5;
 *{
 	font-family: "Helvetica", sans-serif;
@@ -87,7 +96,7 @@ ul{
 }
 .chain-display{
 	width: 25%;
-	background-color: #ACBED8;
+	background-color: $violet;
 	margin: 15px;
 	padding:15px;
 	color:white;
@@ -112,4 +121,33 @@ ul{
 		padding-bottom: 10px;
 		border-bottom: 5px solid black;
 	}
+}
+.background{
+	color: red;
+	height:100%;
+	width:100%;
+	h1{
+		color: green !important;
+	}
+	div{
+		width:20%;
+		margin:0px;
+		padding:0px;
+		height:100%;
+	}
+}
+#stripe1{
+	background-color: $colour1;
+}
+#stripe2{
+	background-color: $colour2;
+}
+#stripe3{
+	background-color: $colour3;
+}
+#stripe4{
+	background-color: $colour4;
+}
+#stripe5{
+	background-color: $colour5;
 }

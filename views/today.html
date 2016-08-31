@@ -5,7 +5,7 @@
       <ul ng-repeat="habit in habits | filter:{done:false}">
     	<li>
         <button ng-click="habit.done = true">Done</button>
-        {{habit.name}}</li>
+        <h4>{{habit.name}}</h4></li>
     </ul>
     <a href="#add">/add new</a><a href="#view-all">/all</a>
     </div>
@@ -17,7 +17,7 @@
     <li>
       <button ng-click="remove($index)">Delete</button>
       <button ng-click="task.done = true">Done</button>
-      {{task.name}}
+      <h4>{{task.name}}</h4>
     </li>
   </ul>
   	<form ng-submit="addTask()">

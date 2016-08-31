@@ -1,3 +1,16 @@
+a {
+  text-decoration: none;
+  color: white; }
+
+textarea {
+  border: none;
+  border-radius: 6px; }
+
+input[type=text] {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 15px; }
+
 button {
   border-radius: 6px;
   border: 2px solid white;

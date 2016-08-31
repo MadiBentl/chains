@@ -8,6 +8,9 @@ textarea {
 
 h1, h2 {
   text-align: center; }
+  h1 span, h2 span {
+    padding-bottom: 5px;
+    border-bottom: 7px black solid; }
 
 input[type=text] {
   border: none;
@@ -15,7 +18,9 @@ input[type=text] {
   padding: 7px 15px; }
 
 button {
-  border-radius: 6px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
   border: 2px solid white;
   color: white;
   background-color: inherit;

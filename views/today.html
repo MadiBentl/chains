@@ -1,10 +1,11 @@
 
+<h1>Today is: <span>{{today | date : format : timezone}}</span></h1>
 <div class="list">
   <h2>Daily Tasks</h2>
     <div class = "task-display">
       <ul ng-repeat="habit in habits | filter:{done:false}">
     	<li>
-        <button ng-click="habit.done = true">Done</button>
+        <button ng-click="habit.done = true">✓</button>
         <h4>{{habit.name}}</h4></li>
     </ul>
     <a href="#add">/add new</a><a href="#view-all">/all</a>
@@ -15,8 +16,8 @@
   <div class = "task-display">
     <ul ng-repeat="task in tasks | filter:{done: false}">
     <li>
-      <button ng-click="remove($index)">Delete</button>
-      <button ng-click="task.done = true">Done</button>
+      <button ng-click="remove($index)">𐄂</button>
+      <button ng-click="task.done = true">✓</button>
       <h4>{{task.name}}</h4>
     </li>
   </ul>

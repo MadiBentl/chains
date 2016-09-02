@@ -105,7 +105,8 @@ myApp.config(function($routeProvider) {
 		templateUrl: "views/add.html"
   })
 	.when("/finished", {
-		templateUrl: "views/finished.html"
+		templateUrl: "views/finished.html",
+		controller: "toDoController"
 	})
 	.when("/titlepage", {
 		templateUrl: "views/titlepage.html"

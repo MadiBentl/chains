@@ -1,4 +1,5 @@
 <div class="todoList notDone">
+  <h1> to do</h1>
   <ul ng-repeat="task in tasks | filter:{done: false}">
   <li>
     <button ng-click="task.done = true">✓</button>
@@ -6,7 +7,8 @@
   </li>
 </ul>
 </div>
-<div class="finishedList done">
+<div class="todoList done">
+  <h1>done</h1>
   <ul ng-repeat="task in tasks | filter:{done: true}">
   <li>
     <button ng-click="task.done = false">𐄂</button>

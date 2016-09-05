@@ -16,7 +16,8 @@ myApp.controller("toDoController", ["$scope", function ($scope){
 		name:""
 	};
 	$scope.addTask= function(){
-		$scope.tasks.push({name: $scope.newTask.name});
+		$scope.tasks.push({name: $scope.newTask.name, done:false});
+		console.log($scope.newTask.name);
 		$scope.newTask.name ="";
 	};
 }]);

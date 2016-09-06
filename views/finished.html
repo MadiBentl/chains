@@ -1,4 +1,4 @@
-<div class="todoList notDone">
+<div class="todoList notDone" ng-controller="toDoController">
   <h1> to do</h1>
   <ul ng-repeat="task in tasks | filter:{done: false}">
   <li>
@@ -15,5 +15,6 @@
     <h4>{{task.name}}</h4>
   </li>
   </ul>
+  <h3 ng-click="testingThis()">test</h3>
 </div>
 <div class="deleted"></div>

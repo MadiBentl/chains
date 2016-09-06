@@ -11,13 +11,13 @@
     <a href="#add">/add new</a><a href="#view-all">/all</a>
     </div>
 </div>
-<div class="list" ng-controller="toDoController as toDoC">
+<div class="list" ng-controller="toDoController as tdc">
   <h2>To Do</h2>
   <div class = "task-display">
-    <ul ng-repeat="task in tasks | filter:{done: false}">
+    <ul ng-repeat="task in tasks| filter:{done: false}">
     <li>
       <button ng-click="remove($index)">𐄂</button>
-      <button ng-model="task.done" ng-click="task.done = true">✓</button>
+      <button ng-click="finishTask(task)">✓</button>
       <h4>{{task.name}}</h4>
     </li>
   </ul>

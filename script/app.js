@@ -5,7 +5,7 @@ myApp.controller("toDoController", ["$scope", function ($scope){
 		{name: "Take dog for a walk", done: false},
 		{name: "Clean the Kitchen", done: false},
 		{name: "Get coffee with Jill at 6PM", done: false},
-		{name: "Finish sales report", done: false},
+		{name: "Finish sales report", done: true},
 		{name: "Call mom", done: false},
 	];
 	$scope.remove = function(index) {
@@ -15,8 +15,21 @@ myApp.controller("toDoController", ["$scope", function ($scope){
 	$scope.newTask={
 		name:""
 	};
+	$scope.testingThis = function(){
+		for (var x = 0; x< $scope.tasks.length; x++){
+			console.log($scope.tasks[x].name + " "+ $scope.tasks[x].done);
+		}
+	}
+	$scope.finishTask = function(task){
+		task.done=true;
+		for (var x = 0; x< $scope.tasks.length; x++){
+			console.log($scope.tasks[x].name + " "+ $scope.tasks[x].done);
+		}
+	};
 	$scope.addTask= function(){
-		$scope.tasks.push({name: $scope.newTask.name, done:false});
+		$scope.tasks.push({
+			name: $scope.newTask.name,
+			done:false});
 		console.log($scope.newTask.name);
 		$scope.newTask.name ="";
 	};
